@@ -21,8 +21,8 @@ const smartGridTest = () => {
     method: 'POST',
     headers: {
       accept: 'application/json',
-      // 'x-guid': 'Wf3-OhFFSz3SSkxMK0-svQ',
-      // 'x-api-key': '0Vk3vXr8TALtTUtCbck6Qwtt',
+      'x-guid': 'Wf3-OhFFSz3SSkxMK0-svQ',
+      'x-api-key': '0Vk3vXr8TALtTUtCbck6Qwtt',
       'content-type': 'application/json'
     },
     body: JSON.stringify({
@@ -33,7 +33,7 @@ const smartGridTest = () => {
     })
   };
   
-  fetch('https://webhook.site/9ee8dab6-2ed1-4571-9066-eb04c6391c56', options)
+  fetch('https://loyalty.yotpo.com/api/v2/customers', options)
     .then(response => response.json())
     .then(response => console.log(response))
     .catch(err => console.error(err));
